@@ -16,6 +16,13 @@ const projects = [
   },
 
   {
+    title: "Interactive Portfolio",
+    category: "A collection of experiments in XR & Interactive Design",
+    preview: "/preview/qussaikh.jpg",
+      link: "https://www.qussaikh.com/",
+  },
+
+  {
     title: "Lufthansa FlayingLab",
     category: "UX DESIGN . LUFTHANSA",
     preview: "/preview/project3.jpg",
@@ -24,12 +31,7 @@ const projects = [
 
 
 
-  {
-    title: "Interactive Portfolio",
-    category: "A collection of experiments in XR & Interactive Design",
-    preview: "/preview/qussaikh.jpg",
-      link: "https://www.qussaikh.com/",
-  },
+
 
 ];
 
