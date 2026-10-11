@@ -1,0 +1,32 @@
+.about-profile { width: 100%; background: #000; color: #f5f5f5; }
+.about-section.about-profile { margin-top: 240px; padding-top: 96px; }
+.about-profile-content { scroll-margin-top: 45px; container-type: inline-size; }
+.about-profile-label { font-size: 12px; font-weight: 500; line-height: 1.5; letter-spacing: .17em; text-transform: uppercase; color: #b8b8be; }
+.about-profile-heading { grid-column: 1; grid-row: 1; }
+.about-profile-heading h2 { margin: 0 0 36px; font-size: clamp(12px, 4.8cqw, 36px); line-height: 1.15; letter-spacing: -.04em; font-weight: 350; color: #f5f5f5; }
+.about-profile-intro { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); column-gap: clamp(30px, 4vw, 64px); align-items: start; margin-top: 16px; }
+.about-profile-bio { grid-column: 1; grid-row: 2; }
+.about-profile-bio p, .about-service p { font-size: clamp(16px, 1.45vw, 20px); }
+.about-profile-bio p { margin: 0 0 22px; line-height: 1.45; letter-spacing: -.02em; color: #c6c6cc; }
+.about-profile-bio p:last-child { margin-bottom: 0; }
+.about-profile-photo { grid-column: 2; grid-row: 1 / 3; width: 100%; min-height: clamp(480px, 42vw, 640px); justify-self: center; align-self: stretch; position: relative; }
+.about-profile-photo img { display: block; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.about-services { border-top: 1px solid #36363b; margin-top: 46px; padding-top: 20px; }
+.about-services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 60px; }
+.about-service { padding: 22px 0 25px; }
+.about-service:nth-child(n + 3) { border-top: 1px solid #36363b; }
+.about-service-number { display: block; margin-bottom: 7px; font-size: 12px; letter-spacing: .12em; color: #a3a3ad; }
+.about-service h4 { margin: 0 0 10px; font-size: clamp(21px, 2vw, 26px); line-height: 1.2; letter-spacing: -.04em; font-weight: 400; color: #f5f5f5; }
+.about-service p { line-height: 1.5; letter-spacing: -.015em; color: #c6c6cc; }
+@media (max-width: 700px) {
+  .about-section.about-profile { margin-top: 120px; padding-top: 64px; }
+  .about-profile-content { scroll-margin-top: 100px; }
+  .about-profile-heading h2 { margin-bottom: 28px; }
+  .about-profile-intro { grid-template-columns: minmax(0, 1fr); }
+  .about-profile-bio p, .about-service p { font-size: 17px; }
+  .about-profile-photo { grid-column: 1; grid-row: 3; max-width: 420px; width: 100%; min-height: 0; margin-top: 30px; }
+  .about-profile-photo img { position: static; height: auto; }
+  .about-services { margin-top: 36px; }
+  .about-services-grid { grid-template-columns: minmax(0, 1fr); }
+  .about-service + .about-service { border-top: 1px solid #36363b; }
+}

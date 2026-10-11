@@ -1,0 +1,142 @@
+/* Quiet navigation and image-led homepage. The case-study layouts remain scoped. */
+body{font-family:var(--font-inter),"Inter",sans-serif}
+input,textarea,select{font-family:inherit}
+body :is(h1,h2,h3,h4,h5,h6),.section-kicker h2{font-family:var(--font-inter),"Inter",sans-serif}
+.name-mark{display:flex;flex-direction:column;width:max-content;font-size:27px;font-weight:650;letter-spacing:-.025em;line-height:1.15}
+.nav-links{margin-top:64px;gap:18px;width:auto}
+.nav-links a{font-size:17px;width:max-content;letter-spacing:-.015em}
+/* Invert each letter against the section scrolling beneath the desktop sidebar. */
+@media(min-width:701px){
+  .navigation{color:#fff;mix-blend-mode:difference}
+  .navigation a:hover{color:#fff;text-decoration:none}
+  .navigation a:focus-visible{outline-color:currentColor}
+}
+.hero h1{font-weight:500;letter-spacing:-.035em;line-height:1.09}
+.hero-greeting{font-family:var(--font-inter),"Inter",sans-serif;font-size:24px;font-weight:400;letter-spacing:-.015em}
+.hero h1.hero-experience-title{font-family:var(--font-inter),"Inter",sans-serif;font-weight:400;font-size:clamp(24px,3.1vw,48px);letter-spacing:-.02em;max-width:780px;line-height:1.25;text-wrap:pretty}
+.hero-phrase{white-space:nowrap}
+.hero-smile{display:block;width:calc(5ch + 4px);margin-top:18px;font-family:var(--font-smile),monospace;font-size:clamp(40px,4vw,60px);line-height:1;font-weight:400;letter-spacing:0;color:#000;white-space:nowrap}
+.hero-smile-type{display:inline-block;box-sizing:content-box;vertical-align:bottom;overflow:hidden;width:0;border-right:4px solid transparent;white-space:nowrap}
+.hero-smile.is-typing .hero-smile-type{animation:hero-smile-type 2.5s steps(5,end) .3s forwards,hero-smile-cursor .9s step-end infinite}
+@keyframes hero-smile-type{to{width:5ch}}
+@keyframes hero-smile-cursor{0%,100%{border-right-color:transparent}50%{border-right-color:currentColor}}
+@media(prefers-reduced-motion:reduce){.hero-smile .hero-smile-type{width:5ch;animation:none!important;border:0}}
+.hero-statement{letter-spacing:-.025em;line-height:1.35}
+.simple-section-title{font-size:13px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;margin:0 0 32px}
+.work-grid{row-gap:28px}
+.work-grid .visual-caption{display:none}
+.work-grid .project-visual{min-height:180px}
+.work-grid .card-grohe .project-visual{min-height:596px}
+.work-grid .project-card .image-reveal{min-height:0}
+.work-grid .project-card a{display:block;height:100%}
+.work-grid .project-card .image-reveal{height:100%}
+.about-section{padding-top:240px;padding-bottom:clamp(60px,7vw,100px)}
+.about-grid{scroll-margin-top:45px}
+@media(min-width:701px){
+  .about-grid .portrait-wrap{align-self:stretch;position:relative}
+  .about-grid .about-portrait{position:absolute;top:0;left:10%;width:80%;height:100%;margin:0;object-fit:cover;object-position:center}
+}
+@media(max-width:700px){.about-grid{scroll-margin-top:15px}}
+.about-copy .simple-section-title{margin-bottom:27px;font-size:clamp(36px,4vw,56px);line-height:1.1;letter-spacing:-.03em;text-transform:none}
+.about-copy > p, .about-copy .about-intro{font-size:clamp(21px,2vw,24px);color:var(--ink);font-weight:400;letter-spacing:-.025em;line-height:1.45}
+.simple-footer{text-align:center;margin-top:125px;padding-top:35px;padding-bottom:45px}
+.simple-footer h2{font-size:27px;font-weight:500;letter-spacing:-.025em;margin:0}
+.simple-footer>p{font-size:14px;margin-top:13px}
+.simple-footer .social-links{justify-content:center;gap:30px;margin:24px 0 35px}
+.simple-footer .social-links a{font-size:13px;padding:5px 0}
+.simple-footer .social-links a:hover{text-decoration:underline;text-underline-offset:5px}
+.simple-footer>.footer-copyright{font-size:11px;margin:0;color:var(--muted)}
+@media(max-width:1000px) and (min-width:701px){.name-mark{font-size:23px}.nav-links a{font-size:16px}.work-grid .card-grohe .project-visual{min-height:596px}}
+@media(max-width:700px){.name-mark{font-size:18px;line-height:20px;font-weight:650}.navigation{padding:14px 24px}.nav-links{margin:0;gap:23px}.nav-links a{font-size:22px;width:100%}.hero h1{font-size:clamp(37px,9.2vw,64px)}.hero-statement{font-size:22px}.simple-section-title{font-size:12px;margin-bottom:25px}.work-grid{gap:20px 18px}.work-grid .card-grohe .project-visual{min-height:0;height:410px}.about-section{padding-top:95px}.simple-footer{margin-top:85px;padding-top:20px;padding-bottom:30px}.simple-footer h2{font-size:24px}.simple-footer>p{font-size:13px;max-width:280px;margin:12px auto 0}.simple-footer .social-links{gap:27px;margin:20px 0 30px}}
+
+/* Selected works: a quiet, single-column index. */
+.work-stack{width:min(100%,620px);margin:0 auto}
+.work-stack-heading{display:flex;align-items:center;justify-content:center;margin:0 0 38px;padding:0;text-align:center}
+.work-stack-heading h2{font-family:var(--font-inter),"Inter",sans-serif;font-size:24px;font-weight:400;letter-spacing:-.015em;text-transform:none;white-space:nowrap}
+.work-stack-heading h2::after{content:'';display:block;width:28px;height:1px;background:#888;margin:12px auto 0}
+.work-categories{display:flex;gap:5px;list-style:none;padding:0;margin:0;flex-wrap:wrap;justify-content:flex-end}
+.work-categories li{border:1px solid #aaa;border-radius:20px;padding:2px 6px;font-size:8px;font-weight:400;line-height:1.2;text-transform:uppercase;color:#626262;white-space:nowrap}
+.work-stack-list{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+.stacked-project a{display:flex;align-items:center;justify-content:center;aspect-ratio:2.8;background:#d9d9d9;text-align:center;padding:22px;transition:background-color .25s}
+.stacked-project h3{font-size:clamp(23px,2.5vw,34px);font-weight:750;letter-spacing:-.025em;line-height:1.13;text-transform:uppercase}
+.stacked-project h3 span{display:block}
+.work-card[data-project=flying-lab] h3 span:last-child{text-transform:none}
+.stacked-project a:hover{background:#cfcfcf}
+.stacked-project a:focus-visible{outline:2px solid #202320;outline-offset:5px}
+@media(max-width:700px){.work-stack{max-width:480px}.work-stack-heading{padding:0;gap:12px;flex-wrap:wrap;margin-bottom:25px}.work-stack-heading h2{font-size:24px}.work-stack-list{gap:10px}.stacked-project a{padding:15px;aspect-ratio:2.8}.stacked-project h3{font-size:clamp(20px,5.6vw,27px)}}
+
+/* Center the work index on the viewport, independently of the sidebar. */
+.content-section.work-section{width:calc(100% - 48px);max-width:1100px;margin-left:auto;margin-right:auto}
+@media(min-width:701px) and (max-width:1000px){.work-stack{max-width:calc(100vw - 330px)}}
+
+.hero .scroll-indicator{left:50%;transform:translateX(-50%);font-size:12px}
+
+.content-section.simple-footer{width:calc(100% - 48px);max-width:1100px;margin-left:auto;margin-right:auto}
+
+/* Project photography fills the existing homepage rectangle. */
+.stacked-project .project-with-image {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  color: #fff;
+}
+
+.stacked-project-image {
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+
+.project-with-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(0 0 0 / 40%);
+  z-index: -1;
+}
+
+.project-with-image h3 {
+  text-shadow: 0 2px 12px #0008;
+}
+
+.project-inner-nature::after {
+  background: rgb(0 0 0 / 40%);
+}
+.about-portrait { display: block; width: 80%; height: auto; margin-inline: auto; }
+.about-section .expertise li { font-size: 14px; line-height: 1.5; }
+
+/* The image softens while the existing title moves into the corner. */
+.work-card { position: relative; container-type: inline-size; --card-dim: 0; --card-blur: 0px; --card-zoom: 1; --card-title-top: 50%; --card-title-left: 50%; --card-title-shift: -50%, -50%; --card-title-size: clamp(17px, 4.5cqw, 28px); --card-title-weight: 600; }
+.work-card[data-project=inner-nature] { --card-overlay-color: #130b2e; }
+.work-card[data-project=palmyra] { --card-overlay-color: #242424; }
+.work-card[data-project=seaside-house] { --card-overlay-color: #352b22; --card-title-size: clamp(20px, 5.2cqw, 33px); --card-title-weight: 500; }
+.work-card[data-project=flying-lab] { --card-overlay-color: #302b1d; }
+.work-card[data-project=flying-lab] .project-with-image::after { background: rgb(0 0 0 / 60%); }
+.work-card[data-project=journey-in-life-evolution] .stacked-project-image { object-position: center 40%; }
+.work-card[data-project=journey-in-life-evolution] { --card-overlay-color: #102c20; }
+.work-card[data-project=journey-in-life-evolution] .project-with-image::after { background: rgb(0 0 0 / 28%); }
+.stacked-project .work-card-link { position: relative; isolation: isolate; overflow: hidden; width: 100%; min-height: 245px; }
+.stacked-project .work-card-coming-soon { display: flex; align-items: center; justify-content: center; aspect-ratio: 2.8; background: #d9d9d9; text-align: center; padding: 22px; cursor: default; }
+.work-card-coming-soon:focus-visible { outline: 2px solid #202320; outline-offset: 5px; }
+.work-card-link::before { content: ''; position: absolute; inset: 0; background: var(--card-overlay-color, #040b16); opacity: var(--card-dim); z-index: 0; transition: opacity .28s ease; }
+.work-card .stacked-project-image { filter: blur(var(--card-blur)); transform: scale(var(--card-zoom)); transition: filter .3s ease, transform .3s ease; }
+.stacked-project .work-card-title { position: absolute; z-index: 3; top: var(--card-title-top); left: var(--card-title-left); transform: translate(var(--card-title-shift)); width: max-content; max-width: calc(100% - 56px); font-size: var(--card-title-size); font-weight: var(--card-title-weight); text-align: left; pointer-events: none; transition: top .3s ease, left .3s ease, transform .3s ease, font-size .3s ease, color .2s ease; }
+.work-card-overlay { position: absolute; inset: 0; z-index: 2; color: #fff; text-align: left; opacity: 0; visibility: hidden; transition: opacity .18s ease, visibility 0s .18s; }
+.work-card-detail { height: 100%; padding: 68px 28px 23px; display: flex; flex-direction: column; }
+.work-card-detail p { font-size: 14px; line-height: 1.45; margin-top: 10px; max-width: 490px; }
+.work-card-methods { margin-top: 20px; }
+.work-card-methods > span { display: block; font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: #d1dde0; margin-bottom: 6px; }
+.work-card-methods ul { display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 0; list-style: none; }
+.work-card-methods li { font-size: 11px; line-height: 1.2; border: 1px solid #ffffff66; padding: 3px 8px; border-radius: 20px; }
+.work-card-cta { margin-top: auto; padding-top: 10px; display: flex; justify-content: flex-end; gap: 8px; font-size: 11px; }
+.work-card-info { display: none; position: absolute; right: 12px; top: 12px; z-index: 3; border: 1px solid #aaa; border-radius: 20px; background: #fff; color: #222; padding: 6px 10px; font-size: 11px; }
+.work-card[data-open=true], .work-card:has(.work-card-link:focus-visible) { --card-dim: .78; --card-blur: 4px; --card-zoom: 1.04; --card-title-top: 23px; --card-title-left: 28px; --card-title-shift: 0, 0; --card-title-size: 17px; --card-title-weight: 500; color: #fff; }
+.work-card[data-open=true] .work-card-overlay, .work-card-link:focus-visible .work-card-overlay { opacity: 1; visibility: visible; transition-delay: .12s, 0s; }
+.work-card[data-open=true] .work-card-title, .work-card-link:focus-visible .work-card-title { color: #fff; }
+@media(hover:hover) and (pointer:fine) {
+  .work-card:has(.work-card-link:hover) { --card-dim: .78; --card-blur: 4px; --card-zoom: 1.04; --card-title-top: 23px; --card-title-left: 28px; --card-title-shift: 0, 0; --card-title-size: 17px; --card-title-weight: 500; }
+  .work-card-link:hover .work-card-overlay { opacity: 1; visibility: visible; transition-delay: .12s, 0s; }
+  .work-card-link:hover .work-card-title { color: #fff; }
+}
+@media(hover:none), (pointer:coarse) { .work-card-info { display: block; top: auto; bottom: 14px; } .work-card-detail { padding-top: 90px; padding-bottom: 24px; } .work-card-cta { padding-right: 64px; } .stacked-project .work-card-link { min-height: 310px; } }
+@media(prefers-reduced-motion:reduce) { .work-card-overlay, .work-card .stacked-project-image, .work-card-link::before, .stacked-project .work-card-title { transition: none; } }

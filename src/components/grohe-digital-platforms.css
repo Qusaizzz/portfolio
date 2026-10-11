@@ -1,0 +1,68 @@
+.grohe-story .digital-platforms {
+  display: block;
+  margin-top: clamp(80px, 10vw, 150px);
+  padding: 0;
+  scroll-margin-top: 0;
+  color: #262626;
+}
+.digital-platforms-inner { max-width: 1000px; margin: auto; }
+.digital-platforms h2 {
+  color: #cecece;
+  font-size: clamp(48px, 6vw, 80px);
+  font-weight: 650;
+  line-height: 1.08;
+  margin: 0 0 36px;
+}
+.digital-platforms h3 {
+  font-size: clamp(19px, 1.8vw, 25px);
+  font-weight: 500;
+  line-height: 1.22;
+  margin: 0 0 18px;
+}
+.digital-platforms p { font-size: 15px; line-height: 1.5; margin: 0; text-align: left; }
+.digital-platforms p + p { margin-top: 14px; }
+.digital-platforms-overview, .digital-platforms-contribution, .digital-platforms-new {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: clamp(28px, 4vw, 58px);
+  align-items: start;
+}
+.digital-platforms img { display: block; width: 100%; height: auto; }
+.digital-platforms-devices { width: 88%; margin: 65px auto 95px; }
+.digital-platforms-devices img, .digital-platforms-laptop img { mix-blend-mode: multiply; }
+.digital-platforms-contribution { align-items: start; }
+.digital-platforms-contribution h3 { font-weight: 400; }
+.digital-platforms-collage {
+  position: relative;
+  aspect-ratio: 1.26;
+  width: 122%;
+  margin-left: 0;
+  margin-top: 0;
+}
+.digital-platforms-collage > div { position: absolute; }
+.digital-platforms-collage-space { top: 0; left: 10%; width: 36%; }
+.digital-platforms-collage-logo { top: 0; left: 57%; width: 30%; }
+.digital-platforms-collage-vr { top: 18%; right: 0; width: 68%; z-index: 2; }
+.digital-platforms-collage-stories { bottom: 0; left: 0; width: 87%; z-index: 3; }
+.digital-platforms-new { margin-top: 110px; align-items: center; }
+@media (max-width: 1100px) {
+  .digital-platforms-collage {
+    width: 100%;
+    margin-left: 0;
+    margin-top: calc(clamp(19px, 1.8vw, 25px) * 1.22 + 18px);
+  }
+  .digital-platforms p { font-size: 14px; }
+  .digital-platforms-overview, .digital-platforms-contribution, .digital-platforms-new { gap: 28px; }
+  .digital-platforms-devices { margin: 45px auto 65px; }
+  .digital-platforms-new { margin-top: 75px; }
+}
+@media (max-width: 700px) {
+  .grohe-story .digital-platforms { margin-top: 75px; scroll-margin-top: 40px; }
+  .digital-platforms h2 { font-size: 48px; margin-bottom: 30px; }
+  .digital-platforms-overview, .digital-platforms-contribution, .digital-platforms-new { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .digital-platforms h3 { font-size: 22px; margin-bottom: 14px; }
+  .digital-platforms p { font-size: 15px; line-height: 1.55; }
+  .digital-platforms-devices { width: 100%; margin: 38px auto 55px; }
+  .digital-platforms-collage { margin-top: 12px; }
+  .digital-platforms-new { margin-top: 65px; }
+}

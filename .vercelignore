@@ -1,0 +1,12 @@
+node_modules
+.next
+.git
+.publish
+docs
+scripts
+test-results
+*.log
+*.tsbuildinfo
+/*.png
+public/**/*.pptx
+public/**/*.mov

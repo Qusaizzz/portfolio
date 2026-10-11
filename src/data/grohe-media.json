@@ -1,0 +1,200 @@
+{
+  "farewell-note": {
+    "src": "/assets/grohe/web/farewell-note.webp",
+    "width": 1200,
+    "height": 2133,
+    "original": "end/F4E6316B-2DF4-448E-8392-277D0031C617.JPG"
+  },
+  "farewell-message": {
+    "src": "/assets/grohe/web/farewell-message.webp",
+    "width": 1200,
+    "height": 2053,
+    "original": "end/599FE729-FF5F-4D00-A0E3-D91C595BB935.jpg"
+  },
+  "hero": {
+    "src": "/assets/grohe/web/hero.webp",
+    "width": 1800,
+    "height": 1013,
+    "original": "01_Dart-Grohe-ISH-2025_150dpi_RGB-DD04-1920x1080.jpg"
+  },
+  "arrival": {
+    "src": "/assets/grohe/web/arrival.webp",
+    "width": 670,
+    "height": 812,
+    "original": "start/Screenshot 2026-09-09 135626.png"
+  },
+  "first-days": {
+    "src": "/assets/grohe/web/first-days.webp",
+    "width": 1800,
+    "height": 1012,
+    "original": "002.jpg"
+  },
+  "desk": {
+    "src": "/assets/grohe/web/desk.webp",
+    "width": 1800,
+    "height": 1012,
+    "original": "IMG_20221020_110622.jpg"
+  },
+  "platform": {
+    "src": "/assets/grohe/web/platform.webp",
+    "width": 1800,
+    "height": 915,
+    "original": "middle.jpg"
+  },
+  "showrooms": {
+    "src": "/assets/grohe/web/showrooms.webp",
+    "width": 1800,
+    "height": 898,
+    "original": "z1.png"
+  },
+  "ui-before": {
+    "src": "/assets/grohe/web/ui-before.webp",
+    "width": 1800,
+    "height": 1020,
+    "original": "SPA draft 03.jpg"
+  },
+  "ui-after": {
+    "src": "/assets/grohe/web/ui-after.webp",
+    "width": 1800,
+    "height": 1020,
+    "original": "SPA dreaft GROHE blue 02.jpg"
+  },
+  "milan-2023": {
+    "src": "/assets/grohe/web/milan-2023.webp",
+    "width": 992,
+    "height": 557,
+    "original": "carousel1.jpg"
+  },
+  "summit-2023": {
+    "src": "/assets/grohe/web/summit-2023.webp",
+    "width": 1024,
+    "height": 1024,
+    "original": "carousel2.jpg"
+  },
+  "waf-2023": {
+    "src": "/assets/grohe/web/waf-2023.webp",
+    "width": 1140,
+    "height": 1520,
+    "original": "carousel3.jpg"
+  },
+  "milan-2024": {
+    "src": "/assets/grohe/web/milan-2024.webp",
+    "width": 818,
+    "height": 545,
+    "original": "carousel4.jpg"
+  },
+  "ish-2025": {
+    "src": "/assets/grohe/web/ish-2025.webp",
+    "width": 1600,
+    "height": 1066,
+    "original": "carousel5.jpg"
+  },
+  "spa-water": {
+    "src": "/assets/grohe/web/spa-water.webp",
+    "width": 1800,
+    "height": 1013,
+    "original": "SPA Installation - new thumbnail 01.jpg"
+  },
+  "spa-stone": {
+    "src": "/assets/grohe/web/spa-stone.webp",
+    "width": 1800,
+    "height": 1013,
+    "original": "SPA Installation - new thumbnail 02.jpg"
+  },
+  "spa-light": {
+    "src": "/assets/grohe/web/spa-light.webp",
+    "width": 1800,
+    "height": 1013,
+    "original": "SPA Installation - new thumbnail 05.jpg"
+  },
+  "spa-yellow": {
+    "src": "/assets/grohe/web/spa-yellow.webp",
+    "width": 1800,
+    "height": 1012,
+    "original": "SPA Installation - new thumbnail 04.jpg"
+  },
+  "ish-moment": {
+    "src": "/assets/grohe/web/ish-moment.webp",
+    "width": 1350,
+    "height": 1800,
+    "original": "IMG_2550.jpg"
+  },
+  "ish-detail": {
+    "src": "/assets/grohe/web/ish-detail.webp",
+    "width": 1350,
+    "height": 1800,
+    "original": "IMG_2847.jpg"
+  },
+  "podcast": {
+    "src": "/assets/grohe/web/podcast.webp",
+    "width": 1800,
+    "height": 1012,
+    "original": "podcast poster 16x9 all text.jpg"
+  },
+  "truck": {
+    "src": "/assets/grohe/web/truck.webp",
+    "width": 678,
+    "height": 452,
+    "original": "images.jpg"
+  },
+  "summit-moment": {
+    "src": "/assets/grohe/web/summit-moment.webp",
+    "width": 1800,
+    "height": 1304,
+    "original": "IMG_20230310_072745.jpg"
+  },
+  "team": {
+    "src": "/assets/grohe/web/team.webp",
+    "width": 692,
+    "height": 519,
+    "original": "image004.jpg"
+  },
+  "farewell": {
+    "src": "/assets/grohe/web/farewell.webp",
+    "width": 1800,
+    "height": 1350,
+    "original": "end/IMG_2978.jpg"
+  },
+  "farewell-gift": {
+    "src": "/assets/grohe/web/farewell-gift.webp",
+    "width": 1106,
+    "height": 1800,
+    "original": "end/IMG_7971.jpg"
+  },
+  "last-day": {
+    "src": "/assets/grohe/web/last-day.webp",
+    "width": 993,
+    "height": 1800,
+    "original": "end/IMG_0739.jpg"
+  },
+  "podcast-social": {
+    "src": "/assets/grohe/web/podcast-social.webp",
+    "width": 1013,
+    "height": 1800,
+    "original": "@ppt/image6.png"
+  },
+  "podcast-page": {
+    "src": "/assets/grohe/web/podcast-page.webp",
+    "width": 1800,
+    "height": 1013,
+    "original": "@ppt/image7.png"
+  },
+  "ar-poster": {
+    "src": "/assets/grohe/web/ar-poster.webp",
+    "width": 900,
+    "height": 1500,
+    "original": "@AR-frame.jpg"
+  },
+  "spaces-poster": {
+    "src": "/assets/grohe/web/spaces-poster.webp",
+    "width": 900,
+    "height": 1125,
+    "original": "@vs-frame.jpg"
+  },
+  "motion-poster": {
+    "src": "/assets/grohe/web/motion-poster.webp",
+    "width": 900,
+    "height": 625,
+    "original": "@Posdcast movie2-frame.jpg"
+  }
+}
